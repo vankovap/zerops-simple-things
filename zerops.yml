@@ -1,0 +1,19 @@
+nodejs:
+  build:
+    base: [nodejs@14]
+    build:
+      - npm i
+    cache: [node_modules]
+    deploy:
+      - package.json
+      - node_modules
+      - ./app/index.js
+      - config.txt
+      - ./app/replace/
+  run:
+    init:
+      - echo "The application is being started ..."
+    envReplace:
+      target: [config.txt, ./app/replace/]
+      delimiter: ["%%", $$]
+    start: npm start
