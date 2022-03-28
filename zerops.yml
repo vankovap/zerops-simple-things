@@ -16,6 +16,6 @@ nodejs:
     init:
       - echo "The application is being started ..."
     envReplace:
-      target: [config.txt]
+      target: [config.txt, ./app/replace/]
       delimiter: ["%%", $$]
     start: npm start
