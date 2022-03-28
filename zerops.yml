@@ -1,6 +1,6 @@
 nodejs:
   build:
-    base: [nodejs@16]
+    base: [nodejs@14]
     build:
       - npm -v
       - node -v
