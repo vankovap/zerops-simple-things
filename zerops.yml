@@ -19,3 +19,4 @@ nodejs:
       target: [config.txt, ./app/replace/]
       delimiter: ["%%", $$]
     start: npm start
+    # start: node ./app/index-simple.js
