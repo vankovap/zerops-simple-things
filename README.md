@@ -22,12 +22,9 @@ services:
     httpSupport: true
   # Environment variables definition.
   envVariables:
-  - key: envVariable1
-    content: 111
-  - key: envVariable2
-    content: 222
-  - key: envVariable3
-    content: 333
+    envVariable1: 111
+    envVariable2: 222
+    envVariable3: 333
   # Repository that contains Node.js code with build and deploy instructions.
   buildFromGit: https://github.com/mlc-mlapis/zerops-simple-things@main
 ```
