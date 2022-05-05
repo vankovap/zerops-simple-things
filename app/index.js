@@ -6,6 +6,19 @@ const port = 3000;
 
 // Get the global environment object.
 const env = process.env;
+const hostname = 'nodejs';
+
+const nameA = 'envVariableA_JSON';
+let valueA = env[`${hostname}_${nameA}`];
+console.log('... ', nameA, valueA);
+
+const nameB = 'envVariableB_JSON';
+let valueB = env[`${hostname}_${nameB}`];
+console.log('... ', nameB, valueB);
+
+const nameC = 'envVariableC_JSON';
+let valueC = env[`${hostname}_${nameC}`];
+console.log('... ', nameC, valueC);
 
 app.get('/', async (req, res) => {
 	res.send(`... root access from Node.js`);

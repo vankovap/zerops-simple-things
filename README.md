@@ -25,6 +25,16 @@ services:
     envVariable1: 111
     envVariable2: 222
     envVariable3: 333
+    envVariableA: {version: 1.0, mode: 'P', debug: null}
+    envVariableA_JSON: ${envVariableA|stringify}
+    envVariableB: |-
+      ssh-rsa xxx1
+      ssh-rsa xxx2
+    envVariableB_JSON: ${envVariableB|stringify}
+    envVariableC:
+      firstName: John
+      lastName: McCain
+    envVariableC_JSON: ${envVariableC|stringify}
   # Repository that contains Node.js code with build and deploy instructions.
   buildFromGit: https://github.com/mlc-mlapis/zerops-simple-things@main
 ```
