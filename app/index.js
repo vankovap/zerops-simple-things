@@ -8,18 +8,16 @@ const port = 3000;
 const env = process.env;
 const hostname = 'nodejs';
 
-console.log('... env:', env);
-
 const nameA = 'envVariableA_JSON';
-let valueA = env[`${hostname}_${nameA}`];
+let valueA = env[`${nameA}`];
 console.log('... ', nameA, valueA);
 
 const nameB = 'envVariableB_JSON';
-let valueB = env[`${hostname}_${nameB}`];
+let valueB = env[`${nameB}`];
 console.log('... ', nameB, valueB);
 
 const nameC = 'envVariableC_JSON';
-let valueC = env[`${hostname}_${nameC}`];
+let valueC = env[`${nameC}`];
 console.log('... ', nameC, valueC);
 
 app.get('/', async (req, res) => {
