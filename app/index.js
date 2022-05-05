@@ -8,6 +8,8 @@ const port = 3000;
 const env = process.env;
 const hostname = 'nodejs';
 
+console.log('... env:', env);
+
 const nameA = 'envVariableA_JSON';
 let valueA = env[`${hostname}_${nameA}`];
 console.log('... ', nameA, valueA);
