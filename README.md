@@ -25,13 +25,14 @@ services:
     envVariable1: 111
     envVariable2: 222
     envVariable3: 333
-    envVariableA: {version: 1.0, mode: 'P', debug: null}
+    envVariableA: |-
+      {"version": 1.0, "mode": "P", "debug": null}
     envVariableA_JSON: ${envVariableA|stringify}
     envVariableB: |-
       ssh-rsa xxx1
       ssh-rsa xxx2
     envVariableB_JSON: ${envVariableB|stringify}
-    envVariableC:
+    envVariableC: |
       firstName: John
       lastName: McCain
     envVariableC_JSON: ${envVariableC|stringify}
