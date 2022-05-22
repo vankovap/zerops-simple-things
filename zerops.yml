@@ -1,23 +1,22 @@
 nodejs:
-  # build:
-    # base: [nodejs@14]
-    # build:
-    #   - npm -v
-    #   - node -v
-    #   - npm i
-    # cache: [node_modules]
-    # deploy:
-    #   - package.json
-    #   - node_modules
-    #   - ./app/index.js
-    #   - config.txt
-    #   - ./app/replace/
+  build:
+    base: [nodejs@14]
+    build:
+      - npm -v
+      - node -v
+      - npm i
+    cache: [node_modules]
+    deploy:
+      - package.json
+      - node_modules
+      - ./app/index.js
+      - config.txt
+      - ./app/replace/
   run:
     prepare:
-      - echo "Install dependencies ..."
-      - npm i
+      - echo "Install dependencies ...."
     init:
-      - echo "The application is being started ..."
+      - echo "The application is being started ...."
     envReplace:
       target: [config.txt, ./app/replace/]
       delimiter: ["%%", $$]
