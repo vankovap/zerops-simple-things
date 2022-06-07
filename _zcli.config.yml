@@ -1,4 +1,0 @@
-restApiAddress: https://demo.devel.zerops.io/api
-grpcApiAddress: "[2a00:1ed0:66:c::4]:20902"
-vpnApiAddress: demo.devel.zerops.io
-caCertificateUrl: https://demo.devel.zerops.io/ca.crt
