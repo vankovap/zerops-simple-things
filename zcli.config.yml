@@ -1,4 +1,4 @@
-region: demo
+region: alpha
 regionURL: https://demo.devel.zerops.io/api/rest/public/region/zcli
 # restApiAddress: https://demo.devel.zerops.io/api
 # grpcApiAddress: "[2a00:1ed0:66:c::4]:20902"
