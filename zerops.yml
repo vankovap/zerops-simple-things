@@ -11,3 +11,17 @@ nodejs:
       # - node_modules
       # - ./app/index.js
       - ./app/index-simple.js
+      # - config.txt
+      # - ./app/replace/
+  run:
+    prepare:
+      - echo "Install dependencies ...."
+    init:
+    #  - npm -v
+    #  - node -v
+      - echo "The application is being started ...."
+    # envReplace:
+    #  target: [config.txt, ./app/replace/]
+    #  delimiter: ["%%", $$]
+    # start: npm start
+    start: node ./app/index-simple.js
