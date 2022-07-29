@@ -11,5 +11,3 @@ nodejs:
       # - node_modules
       # - ./app/index.js
       - ./app/index-simple.js
-      # - config.txt
-      # - ./app/replace/
